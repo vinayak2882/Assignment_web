@@ -84,3 +84,8 @@ CSS allows you to group multiple selectors that share the same declaration. This
 19..What are the differences between position: 
 
 relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it.
+
+
+
+
+ZOOM RECORDING LINK : https://drive.google.com/drive/folders/1fkQ63dGdKKRKlrNeeUYSTgTxq03kgLXx?usp=sharing

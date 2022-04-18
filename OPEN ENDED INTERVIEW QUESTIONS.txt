@@ -60,3 +60,6 @@ Acceptability. Software must be acceptable to the type of users for which it is 
 Dependability & Security. Software dependability includes a range of characteristics including reliability, security, and safety. ...
 Efficiency. ...
 Maintainability.
+
+
+ZOOM RECORDING LINK : https://drive.google.com/drive/folders/1fkQ63dGdKKRKlrNeeUYSTgTxq03kgLXx?usp=sharing
