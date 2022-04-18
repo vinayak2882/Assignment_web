@@ -1,0 +1,158 @@
+    1.Explain briefly what happens when you hit a url? explain DNS lookup.
+    
+    Answer : URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the address bar of your web browser. It is a reference to a resource on the internet. When you enter a URL into a web browser for example I entered "www.masaischool.com" in my browser.The first things happens, is a 'DNS' match this url with the 'IP' address.Then the browser sends an HTTP request to the server and the server sends back an HTTP response.
+    The browser begins rendering the HTML on the page with additional resources such as CSS, JavaScript etc. Each subsequent request completes a request/response cycle in browser.
+    
+    DNS(Domain Name System) is a protocol which governs how computers exchange data online. 
+    A DNS lookup, in a general sense, is the process by which a DNS record is returned from a DNS server. This is like looking up a phone number in a phone book - that is why it is referred to as a "lookup".
+    The basic idea of DNS is that humans can't easily remember long strings of digits like machines can, but can much more easily remember words. So, when you type in a domain name like "www.masaischool.com". The request is forwarded to a DNS server which returns the corresponding IP address.
+    This address can be used in any system and create channel for request /response cycle.
+    The result is the user sees web pages as expected.The two types of DNS lookups are forward DNS lookups and reverse DNS lookups.
+
+    2.What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file?
+
+    Answer : URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the address bar of your web browser. It is a reference to a resource on the internet
+    Components of the URL are : 
+    a.)The protocol or scheme: The first part of the URL is the scheme, which indicates the protocol that the browser must use to request the resource (a protocol is a set method for exchanging or transferring data around a computer network).
+    b.)Host name or domain name : The unique reference the represents a webpage.
+    c.)Port name: Usually not visible in URLs, but necessary.
+    d.)Path: A path refers to a file or location on the web server. 
+    d.)Query: Found in the URL of dynamic pages. The query consists of a question mark, followed by parameters. 
+    e.)Parameters: Pieces of information in a query string of a URL. Multiple parameters can be separated by ampersands (&)
+
+    3.What is HTTP protocol?
+
+    Answer : The Hypertext Transfer Protocol (HTTP) is application-level protocol for collaborative, distributed, hypermedia information systems. It is the data communication protocol used to establish communication between client and server.
+    HTTP is TCP/IP based communication protocol, which is used to deliver the data like image files, query results, HTML files etc on the World Wide Web (WWW) with the default port is TCP 80. It provides the standardized way for computers to communicate with each other.
+
+    The Basic Characteristics of HTTP (Hyper Text Transfer Protocol):
+    a.)It is the protocol that allows web servers and browsers to exchange data over the web.
+    b.)It is a request response protocol.
+    c.)It uses the reliable TCP connections by default on TCP port 80.
+    d.)It is stateless means each request is considered as the new request. In other words, server doesn't recognize the user by default.
+
+    4. What is TCP Protocol?
+   
+    Answer : TCP stands for Transmission Control Protocol. It is a transport layer protocol that facilitates the transmission of packets from source to destination. It is a connection-oriented protocol that means it establishes the connection prior to the communication that occurs between the computing devices in a network. This protocol is used with an IP protocol, so together, they are referred to as a TCP/IP.
+    The main functionality of the TCP is to take the data from the application layer. Then it divides the data into a several packets, provides numbering to these packets, and finally transmits these packets to the destination. The TCP, on the other side, will reassemble the packets and transmits them to the application layer. As we know that TCP is a connection-oriented protocol, so the connection will remain established until the communication is not completed between the sender and the receiver.
+    Features of TCP Protocol : Transport Layer Protocol,Reliable, Order of the data is maintained, Connection-oriented.
+
+    5. Explain all the different HTTP methods?
+
+    Answer : An HTTP method, sometimes referred to as an HTTP verb, indicates the action that the HTTP request expects from the queried server.
+    i) GET: This method retrieves information from the given server using a given URI. GET request can retrieve the data. It can not apply other effects on the data.
+    ii) HEAD: This method is the same as the GET method. It is used to transfer the status line and header section only.
+    iii) POST: The POST request sends the data to the server. For example, file upload, customer information, etc. using the HTML forms.
+    iv) PUT: The PUT method is used to replace all the current representations of the target resource with the uploaded content.
+    v) DELETE: The DELETE method is used to remove all the current representations of the target resource, which is given by URI.
+    vi) CONNECT: This method establishes a tunnel to the server, which is identified by a given URI.
+    vii) OPTIONS :This method describes the options of communication for the target resource.
+
+    6.What are HTTP headers?
+  
+    Answer: HTTP headers contain text information stored in key-value pairs, and they are included in every HTTP request (and response, more on that later). These headers communicate core information, such as what browser the client is using what data is being requested.
+
+
+    7.What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx?
+    
+    Answer : HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+    a. 2xx success This class of status codes indicates the action requested by the client was received, understood, and accepted.
+    b. 3xx redirection his class of status code indicates the client must take additional action to complete the request. Many of these status codes are used in URL redirection
+    c. 4xx client errors This class of status code is intended for situations in which the error seems to have been caused by the client. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation.
+    d. 5xx server errors The server failed to fulfil a request. Response status codes beginning with the digit "5" indicate cases in which the server is aware that it has encountered an error or is otherwise incapable of performing the request.
+
+
+    8. What does cache control on http response mean?
+
+    Answer: Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses. Policies include how a resource is cached, where it's cached and its maximum age before expiring.
+    
+    9. What is polling?
+    
+    Answer :Polling is a technique by which the client asking the server for new data regularly.
+    
+    10.What is long polling?
+    
+    Answer: Polling is a technique that allows the servers to push information to a client. Long polling is a version of traditional polling that allows the server to send data to a client whenever available.
+
+    11.What are web sockets?
+    
+    Answer: The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive  responses without having to poll the server for a reply.
+    
+    12. How is web sockets different from HTTP?
+
+    Answer : 
+    a. HTTP is a uni-directional communicational protocol, whereas WebSocket is bi-directional.
+    b. Whenever a request is made through HTTP, it creates a connection at the client(browser) and closes it once the response from the server is received. Whereas in WebSocket, it keeps the connection open until the state has died.
+    c. Http should not be used, when you don’t want the connection to be opened for a long time, whereas WebSocket can be used in that case.
+    d.Http works poorly with frequent kind of application, which overloads the server. Whereas WebSocket can be used with Chat, Trading, frequent updates kind of application, where a request is made very frequently.
+    e. Http uses HTTP or https protocol for sending a request(like http://www.google.com), whereas WebSocket uses ws protocol( like ws://www.google.com).
+
+
+    13.What is HTTPS?
+
+    Answer: HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between the user's computer and the site. Users expect a secure and private online experience when using a website.
+
+   14. What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+   
+   Answer: “CORS” stands for Cross-Origin Resource Sharing. It allows you to make requests from one website to another website in the browser, which is normally prohibited by another browser policy.
+   The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers.
+
+   15.What does Access-Control-Allow-Origin header do?
+
+    Answer:  The Access-Control-Allow-Origin is a response header that is used to indicates whether the response can be shared with requesting code from the given origin.
+    Access-Control-Allow-Origin is a CORS header. CORS, or Cross Origin Resource Sharing, is a mechanism for browsers to let a site running at origin A to request resources from origin B.
+
+    16. What is clickjacking? How do you fix it?
+     Answer: Clickjacking is an attack that tricks a user into clicking a webpage element which is invisible or disguised as another element. This can cause users to unwittingly download malware, visit malicious web pages, provide credentials or sensitive information, transfer money, or purchase products online.
+
+    Clickjacking is an attack that tricks a user into clicking a webpage element which is invisible or disguised as another element. This can cause users to unwittingly download malware, visit malicious web pages, provide credentials or sensitive information, transfer money, or purchase products online.
+    A better approach to prevent clickjacking attacks is to ask the browser to block any attempt to load your website within an iframe. You can do it by sending the X-Frame-Options HTTP header.
+
+    17.What are some performance metrics for your website?
+
+    Answer : Number of VisitorsAverage, Pageviews per Session, Session Duration, Average Time on Page, Top Traffic Source, Interactions per Visit, DNS lookup time, Connection time, Error rate etc.
+
+    18.What does the following term mean?
+    a.)Time to first byte,
+    b.)Page load time
+
+    Answer: Time to First Byte (TTFB) ,refers to the time between the browser requesting a page and when it receives the first byte of information from the server.
+    Page load time, is the time it takes for a page to load, measured from navigation start to the start of the load event.
+
+
+
+    19. What do CDN or Content Delivery Networks do? When do you need a CDN?
+
+    Answer :A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content. A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos.
+    Anybody who has a website or mobile application that's likely to be requested by more than one user at a time can benefit from a CDN.
+
+    20. What is the difference between Client Side Renderring and Server Side Renderring?
+
+    Answer: 
+    Client-Side Rendering (CSR) is a rendering mode where the request to access a page is processed by the browser, using only the JavaScript file to generate the HTML content.The access command information is sent to the server, which returns with a simple HTML containing the JavaScript information that will load the entire site.
+    The Server-Side Rendering (SSR) mode is a method considered older and heavier than CSR. Here, when a user accesses a website, this request’s information is sent directly to the server, which responds with a file with the complete HTML code. From this content, the website will be properly loaded in full.
+
+
+    21. What is Progressive Renderring
+
+   Answer:  Progressive rendering is the name given to techniques used to render content for display as quickly as possible.
+    OR 
+    Progressive Rendering is the technique of sequentially rendering portions of a webpage in the server and streaming it to the client in parts without waiting for the whole page to rendered
+
+
+    22.What is the difference between Preloading and Prefetching resources?
+
+    Answer:
+    <link rel="preload"> tells the browser to download and cache a resource (like a script or a stylesheet) as soon as possible. It’s helpful when you need that resource a few seconds after loading the page, and you want to speed it up.
+
+    <link rel="prefetch"> asks the browser to download and cache a resource (like, a script or a stylesheet) in the background. The download happens with a low priority, so it doesn’t interfere with more important resources. It’s helpful when you know you’ll need that resource on a subsequent page, and you want to cache it ahead of time.
+    OR 
+Preload is an early fetch instruction to the browser to request a resource needed for a page (key scripts, Web Fonts, hero images). Prefetch serves a slightly different use case — a future navigation by the user (e.g between views or pages) where fetched resources and requests need to persist across navigations.
+
+
+23.What are service workers?
+
+Answer: 
+Service Worker is a script that works on browser background without user interaction independently. Also, It resembles a proxy that works on the user side. With this script, you can track network traffic of the page, manage push notifications and develop “offline first” web applications with Cache API.
+
+A service worker is a type of web worker. It's essentially a JavaScript file that runs separately from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, and delivering push messages.
